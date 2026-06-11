@@ -1,0 +1,18 @@
+"use client";
+
+import { ReactNode } from "react";
+import { motion } from "framer-motion";
+
+export const SlideUp = ({ children, delay = 0, className = "" }: { children: ReactNode; delay?: number; className?: string }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6, delay, type: "spring", stiffness: 100, damping: 20 }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+};
