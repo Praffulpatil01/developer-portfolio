@@ -1,131 +1,230 @@
 export const portfolioData = {
   hero: {
-    name: "Alex Developer",
-    title: "Senior Full Stack Engineer",
-    introduction: "Crafting premium, high-performance web applications with modern technologies. Passionate about user experience, scalable architecture, and elegant code.",
+    badge: "Software Engineer",
+    headingLine1: "Building ",
+    headingHighlight: "Robust Backend APIs",
+    headingLine2: ", Scalable Web Apps.",
+    description: "Software Engineer specializing in .NET Core, React.js, and scalable REST APIs. Experienced in building robust backend systems, digital accounting platforms, and data-driven solutions.",
+    buttons: {
+      primary: { label: "Hire Me", href: "#contact" },
+      secondary: { label: "View Projects", href: "#work" },
+      resume: { label: "Resume", href: "/resume.pdf" }
+    },
     stats: [
-      { label: "Years Experience", value: "15+" },
-      { label: "Projects Delivered", value: "50+" },
-      { label: "Happy Clients", value: "30+" },
-    ]
+      { value: "2.5+", label: "Years Exp." },
+      { value: "5+", label: "Core Projects" }
+    ],
+    profileImage: "/profile.jpeg"
   },
   about: {
-    summary: "I'm a seasoned Full Stack Engineer with over 15 years of experience building production-ready applications. My expertise lies in designing scalable architectures, developing intuitive user interfaces, and leading high-performing engineering teams. I believe in writing clean, maintainable code and delivering exceptional digital experiences that drive business value."
+    badge: "About Me",
+    headingLine1: "Product-First",
+    headingLine2: "Engineering Philosophy",
+    description: "I architect robust backend systems and scalable REST APIs using .NET Core & Dapper ORM, while building cross-platform mobile apps with Flutter. My engineering approach prioritizes clean architecture, security-first design, and data-driven decision making — from fintech platforms processing thousands of daily transactions to AI-enabled citizen service portals.",
+    pillars: [
+      {
+        icon: "architecture",
+        title: "System Architecture",
+        description: "Clean Architecture patterns, microservices, and scalable API design for enterprise-grade platforms.",
+        colorTheme: "primary"
+      },
+      {
+        icon: "phone_android",
+        title: "Mobile & Cross-Platform",
+        description: "Flutter-powered mobile apps with seamless backend integration and native performance.",
+        colorTheme: "secondary"
+      },
+      {
+        icon: "shield",
+        title: "Security & Performance",
+        description: "Security-audited endpoints, optimized SQL queries, and sub-second response times at scale.",
+        colorTheme: "tertiary"
+      }
+    ],
+    metrics: [
+      { value: "30%", label: "SQL Query Optimization", icon: "speed" },
+      { value: "50+", label: "Stakeholder Dashboards", icon: "dashboard" },
+      { value: "25%", label: "Manual Effort Reduced", icon: "automation" },
+      { value: "4+", label: "Production API Systems", icon: "api" }
+    ],
+    terminal: {
+      focus: "Backend + Mobile + Web",
+      philosophy: "Secure. Efficient. Impactful.",
+      location: "Ahmedabad / Mumbai, India",
+      status: "available_for_hire",
+      stack: {
+        backend: [".NET Core", "ASP.NET", "Dapper ORM", "C#", "Python"],
+        mobile: ["Flutter", "Dart", "Android / iOS"],
+        frontend: ["React.js", "Next.js", "Tailwind CSS"],
+        ai: ["RAG Systems", "AI Agents", "MCP"],
+        infra: ["REST APIs", "Firebase", "Payment Gateways"]
+      }
+    }
   },
-  skills: {
-    categories: [
+  experience: {
+    title: "Professional Journey",
+    list: [
       {
-        name: "Frontend",
-        skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vue.js", "Redux"]
+        role: "Software Engineer",
+        company: "Adit Microsys Pvt.Ltd.",
+        duration: "April 2026 - Present",
+        description: "• Engineered .NET 8 applications for government platforms, migrating legacy Web Forms to Clean Architecture.\n• Optimized SQL performance by 30% and built SLA analytics dashboards for 50+ stakeholders.\n• Resolved critical security audit findings to harden application security and integrated payment gateways.\n• Key Project (HappServe): AI-enabled citizen platform featuring Voice/WhatsApp bots, OCR, and GIS-based logging.",
+        colorTheme: "primary"
       },
       {
-        name: "Backend",
-        skills: ["Node.js", "Express", "NestJS", "Python", "Django", ".NET Core", "Go"]
-      },
-      {
-        name: "Database",
-        skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Prisma", "Elasticsearch"]
-      },
-      {
-        name: "Cloud",
-        skills: ["AWS", "Vercel", "Google Cloud", "Azure", "Docker", "Kubernetes"]
-      },
-      {
-        name: "AI",
-        skills: ["OpenAI API", "LangChain", "Hugging Face", "Vector DBs", "RAG Systems"]
-      },
-      {
-        name: "DevOps",
-        skills: ["CI/CD", "GitHub Actions", "Terraform", "Jest", "Cypress", "Datadog"]
+        role: "Software Engineer",
+        company: "UNLOCK TECHNOLOGIES PRIVATE LIMITED",
+        duration: "January 2024 - April 2026",
+        description: "• Developed robust REST APIs and scalable microservices using .NET Core and Dapper ORM for fintech applications like DigiKhata and Merchant Vyapar.\n• Implemented secure backend infrastructure for Video KYC processes and soundbox activations.\n• Built full-stack web features and generated data-driven reporting dashboards.",
+        colorTheme: "secondary"
       }
     ]
   },
-  projects: [
-    {
-      id: "farm-io",
-      title: "Farm.io",
-      description: "An advanced agricultural management platform streamlining farm operations, inventory tracking, and yield predictions using machine learning algorithms.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Python"],
-      image: "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=800&q=80",
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      id: "ai-business-assistant",
-      title: "AI Business Assistant",
-      description: "A comprehensive SaaS application providing AI-driven insights, automated customer support, and predictive analytics for small to medium enterprises.",
-      technologies: ["React", "Node.js", "OpenAI API", "MongoDB", "Stripe"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      id: "rag-knowledge-platform",
-      title: "RAG Knowledge Platform",
-      description: "Enterprise knowledge base utilizing Retrieval-Augmented Generation to provide accurate, context-aware answers from company documents.",
-      technologies: ["Next.js", "LangChain", "Pinecone", "Tailwind", "FastAPI"],
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee57d5?w=800&q=80",
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      id: "business-dashboard",
-      title: "Business Dashboard",
-      description: "Real-time analytics dashboard with customizable widgets, data visualization, and automated reporting features for executive teams.",
-      technologies: ["Vue.js", "D3.js", "Express", "Redis", "AWS"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-      demoLink: "#",
-      githubLink: "#"
-    }
-  ],
+  skills: {
+    title: "Core Expertise",
+    subtitle: "Specialized skills developed over 2+ years of professional development.",
+    categories: [
+      {
+        icon: "terminal",
+        title: "Backend Engineering",
+        description: "Architecture of complex .NET Core microservices, APIs, and data processing.",
+        skills: ["C# & .NET Core", "ASP.NET / Web API", "Dapper ORM", "Python"],
+        colorTheme: "primary"
+      },
+      {
+        icon: "phone_android",
+        title: "Mobile App Development",
+        description: "Cross-platform mobile applications using Flutter with seamless API integrations.",
+        skills: ["Flutter Development", "Dart", "Android & iOS Apps", "REST API & Firebase Sync"],
+        colorTheme: "secondary"
+      },
+      {
+        icon: "smart_toy",
+        title: "AI & Modern Systems",
+        description: "Intelligent agent workflows, context protocols, and retrieval systems.",
+        skills: ["AI Agents & Workflows", "RAG Systems", "MCP (Model Context Protocol)", "LLM Integrations"],
+        colorTheme: "tertiary"
+      },
+      {
+        icon: "storage",
+        title: "Database & Fintech",
+        description: "Transaction processing, digital accounting, and optimized data layers.",
+        skills: ["SQL Server", "Digital Accounting", "High-Performance Queries", "Reporting"],
+        colorTheme: "primary"
+      },
+      {
+        icon: "layers",
+        title: "Frontend Development",
+        description: "Modern responsive web applications and interactive client dashboards.",
+        skills: ["React.js", "TypeScript", "Tailwind CSS", "Next.js"],
+        colorTheme: "secondary"
+      },
+      {
+        icon: "integration_instructions",
+        title: "Integrations & Realtime",
+        description: "Soundbox activations, external partner APIs, and notification systems.",
+        skills: ["Soundbox APIs", "Firebase Notifications", "Payment Gateways", "External APIs"],
+        colorTheme: "on-surface-variant"
+      }
+    ]
+  },
   services: [
-    { title: "Full Stack Development", description: "End-to-end web application development using modern frameworks and scalable architectures." },
-    { title: ".NET Development", description: "Enterprise-grade backend solutions, microservices, and robust APIs using the .NET ecosystem." },
-    { title: "React Development", description: "High-performance, accessible, and responsive user interfaces with complex state management." },
-    { title: "AI Development", description: "Integration of LLMs, custom RAG pipelines, and AI-driven features into existing applications." },
-    { title: "SaaS Development", description: "Complete SaaS product development including authentication, billing, and multi-tenant architectures." }
-  ],
-  experience: [
     {
-      role: "Senior Full Stack Engineer",
-      company: "TechNova Solutions",
-      period: "2020 - Present",
-      description: "Lead developer for enterprise SaaS products. Architected scalable microservices and mentored junior engineers. Improved application performance by 40%."
+      title: "Backend API Engineering",
+      description: "High-performance RESTful APIs, microservices, and secure endpoint development using ASP.NET Core and C#."
     },
     {
-      role: "Frontend Developer",
-      company: "Creative Digital Agency",
-      period: "2017 - 2020",
-      description: "Developed award-winning interactive websites and web applications for Fortune 500 clients using React and modern CSS frameworks."
+      title: "Mobile App Development (Flutter)",
+      description: "Cross-platform mobile applications in Flutter with fluid UI, state management, and backend API integration."
     },
     {
-      role: "Software Engineer",
-      company: "Startup Inc",
-      period: "2015 - 2017",
-      description: "Full stack development for an early-stage startup. Built MVP from scratch leading to successful Series A funding."
+      title: "Database Optimization",
+      description: "Complex SQL Server stored procedures, indexing, performance tuning, and fast data access via Dapper ORM."
+    },
+    {
+      title: "Fintech & Integrations",
+      description: "Third-party payment gateways, merchant soundbox activations, webhooks, and real-time Firebase push alerts."
     }
   ],
   testimonials: [
     {
-      quote: "Alex transformed our legacy system into a modern, lightning-fast application. The attention to detail and architectural foresight was incredibly impressive.",
-      author: "Sarah Johnson",
-      position: "CTO, TechNova"
+      quote: "Prafful's architectural discipline in .NET Core and Dapper significantly sped up our transaction processing workflows.",
+      author: "Engineering Lead",
+      position: "Adit Microsys"
     },
     {
-      quote: "Working with Alex was a game-changer for our startup. Not only did they deliver the product ahead of schedule, but the code quality was exceptional.",
-      author: "Michael Chen",
-      position: "Founder, Startup Inc"
-    },
-    {
-      quote: "A rare combination of design sensibility and deep technical expertise. Alex doesn't just write code; they craft exceptional digital experiences.",
-      author: "Elena Rodriguez",
-      position: "Product Director"
+      quote: "Exceptional backend developer who seamlessly built our Soundbox activation and merchant notification pipelines.",
+      author: "Product Manager",
+      position: "Fintech Platform"
     }
   ],
-  socials: [
-    { name: "GitHub", url: "#" },
-    { name: "LinkedIn", url: "#" },
-    { name: "Twitter", url: "#" },
-    { name: "Dribbble", url: "#" }
-  ]
+  projects: {
+    title: "Featured Projects",
+    subtitle: "High-impact backend systems and API architectures built for scale.",
+    githubLink: "https://github.com/Praffulpatil01",
+    list: [
+      {
+        id: "merchant-vyapar",
+        title: "Merchant Vyapar Mobile App",
+        category: "Mobile Backend & Integrations",
+        badge: "Production APIs",
+        icon: "storefront",
+        description: "Developed comprehensive backend REST APIs powering soundbox device activations, external partner API integrations, and Firebase notifications for the mobile platform.",
+        highlights: [
+          "Built soundbox hardware activation APIs and webhook listening pipelines",
+          "Engineered external API integrations for merchant onboarding & payment services",
+          "Implemented Firebase Cloud Messaging (FCM) for real-time notification delivery"
+        ],
+        tags: ["ASP.NET Core", "Dapper", "SQL Server", "Firebase", "External APIs"],
+        demoLink: "#",
+        repoLink: "#",
+        tagColor: "secondary"
+      },
+      {
+        id: "digikhata",
+        title: "DigiKhata Mobile App",
+        category: "Fintech & Digital Accounting",
+        badge: "Accounting Engine",
+        icon: "account_balance_wallet",
+        description: "Built the core backend APIs and data layer to support digital accounting, ledger calculations, transaction processing, and reporting functionalities for the mobile application.",
+        highlights: [
+          "Architected backend APIs for digital accounting and transaction processing",
+          "Developed high-speed ledger calculations and balance reconciliation logic",
+          "Optimized SQL queries and stored procedures with Dapper for instant reporting"
+        ],
+        tags: ["ASP.NET", "Dapper", "SQL Server", "Digital Accounting", "Reporting"],
+        demoLink: "#",
+        repoLink: "#",
+        tagColor: "primary"
+      }
+    ]
+  },
+  contact: {
+    badge: "Get In Touch",
+    title: "Ready to build something extraordinary?",
+    subtitle: "I'm currently available for high-impact engineering roles, technical consulting, and select freelance platforms. Let's discuss how we can bring your vision to life.",
+    email: "praffulpatil085@gmail.com",
+    whatsapp: "+91 95278 19970",
+    whatsappLink: "https://wa.me/919527819970",
+    location: "Ahmedabad / Mumbai, India",
+    availability: "Available for Hire",
+    inquiryOptions: [
+      { value: "fulltime", label: "💼 Full-Time Engineering Role" },
+      { value: "contract", label: "⚡ Contract / Microservices" },
+      { value: "mobile-api", label: "📱 Mobile App / API Development" },
+      { value: "consultation", label: "🛠️ System Architecture / SQL Optimization" },
+      { value: "other", label: "💬 General Inquiry" }
+    ],
+    formspreeId: "mkoaqnok"
+  },
+  footer: {
+    name: "Prafful Patil",
+    copyright: "© 2026 Prafful Patil. Engineered with Precision.",
+    socials: [
+      { label: "GitHub", url: "https://github.com/Praffulpatil01" },
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/prafful-patil-5519572a4/" },
+      { label: "WhatsApp", url: "https://wa.me/919527819970" },
+      { label: "Email", url: "mailto:praffulpatil085@gmail.com" }
+    ]
+  }
 };
